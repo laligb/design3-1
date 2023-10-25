@@ -1,15 +1,15 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-
-* {
-  padding: 0;
-  box-sizing: border-box;
-  margin: 0 auto;
 }
 
 @font-face {
@@ -22,7 +22,6 @@
 }
 
 body {
-  display: flex;
   width: 1440px;
   height: 1080px;
   padding: 284px 352px;
@@ -57,7 +56,11 @@ body {
 
 /* Mobile styles */
 @media (max-width: 375px) {
-  /* Add other mobile-specific styles here */
+  .right-part {
+    width: 375px;
+    height: 356px;
+    flex-shrink: 0;
+  }
 }
 
 /* Desktop styles */
