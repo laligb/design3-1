@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <link
       rel="icon"
       type="image/png"
@@ -13,59 +13,44 @@
     />
 
     <title>Frontend Mentor | Results summary component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
+
   <body>
-    <div class="group15 rectangle">
-      <div class="group14">
-        <div class="result">Your Result</div>
-        <div class="group16 oval">
-          <div class="group11">
-            <div class="text76">76</div>
-            <div class="text100">of 100</div>
-          </div>
-          <!-- <div class="Oval"></div> -->
+    <div class="container">
+      <div class="right-part">
+        <h3>Your Result</h3>
+        <div class="oval">
+          <p class="points">76</p>
+          <p class="full-points">of 100</p>
         </div>
-        <div class="group8">
-          <div class="great">Great</div>
-          <div class="your-score">
-            You scored higher than 65% of the people who have taken these tests.
-          </div>
-        </div>
+        <div id="great">Great</div>
+        <p>
+          Your performance exceed 65% of the people conducting the test here!
+        </p>
       </div>
-      <div class="second-block">
-        <div class="summary">Summary</div>
-        <div class="group3">
-          <div class="list reaction">
+      <div class="left-part">
+        <h3>Summary</h3>
+        <ul>
+          <li class="reaction">
             <div class="reaction-text">Reaction</div>
-            <div class="scores">
-              <div class="score"><strong>80</strong> / 100</div>
-            </div>
-          </div>
-          <div class="list memory">
+            <div><strong>80 </strong>/100</div>
+          </li>
+          <li class="memory">
             <div class="memory-text">Memory</div>
-            <div class="scores">
-              <div class="score"><strong>92</strong> / 100</div>
-            </div>
-          </div>
-          <div class="list verbal">
+            <div><strong>92 </strong>/100</div>
+          </li>
+          <li class="verbal">
             <div class="verbal-text">Verbal</div>
-            <div class="scores">
-              <div class="score"><strong>61</strong>/ 100</div>
-            </div>
-          </div>
-          <div class="list visual">
+            <div><strong>61 </strong>/100</div>
+          </li>
+          <li class="visual">
             <div class="visual-text">Visual</div>
-            <div class="scores">
-              <div class="score"><strong>72</strong> / 100</div>
-            </div>
-          </div>
-        </div>
-        <button class="list btn">Continue</button>
+            <div><strong>73 </strong>/100</div>
+          </li>
+        </ul>
+        <button>Continue</button>
       </div>
     </div>
-
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
