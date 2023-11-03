@@ -8,6 +8,7 @@
   font-size: 11px;
   text-align: center;
   margin-top: 10px;
+  padding-bottom: 5px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -223,7 +224,7 @@
 }
 
 /* Mobile styles */
-@media (max-width: 1440px) {
+@media (max-width: 1440px) and (min-width: 375px) {
   .right-part {
     width: 100%;
     height: 356px;
@@ -385,16 +386,18 @@
 @media (min-width: 1440px) {
   body {
     width: 100%;
-    height: 1080px;
-    padding: 284px 352px;
-    justify-content: center;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     background: var(--Very-Light-blue, #ecf2ff);
   }
   .container {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
   }
 
   .container {
@@ -427,8 +430,10 @@
   }
 
   .right-part h3 {
-    position: relative;
-    top: 38px;
+    /* position: relative;
+    top: 38px; */
+    margin: auto;
+    margin-top: 38px;
 
     color: var(--Light-Blue, #cac9ff);
     font-feature-settings: "clig" off, "liga" off;
@@ -443,8 +448,7 @@
 
   .right-part #great {
     position: relative;
-    top: 121px;
-
+    top: 43px;
     color: var(--White, #fff);
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
@@ -471,7 +475,11 @@
     line-height: normal;
 
     position: relative;
-    top: 130px;
+    top: 56px;
+  }
+
+  .right-part .text {
+    margin: 0 auto;
   }
 
   /* Oval */
@@ -481,8 +489,10 @@
     flex-shrink: 0;
     text-align: center;
     position: relative;
-    top: 104px;
+    /* top: 104px; */
+    top: 35px;
     border-radius: 50%;
+    margin: 0 auto;
 
     background: var(
       --Gradient-2,
@@ -519,6 +529,7 @@
   .oval .full-points {
     width: 52px;
     height: 23px;
+    margin: 0 auto;
 
     color: var(--Light-Blue, #cac9ff);
     font-feature-settings: "clig" off, "liga" off;
@@ -539,8 +550,7 @@
 
   /* Left Part */
   .left-part {
-    margin-right: 40px;
-    margin-left: 40px;
+    margin: 0 auto;
   }
 
   .left-part h3 {
@@ -558,10 +568,19 @@
   }
 
   .left-part ul {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-around; */
 
-    margin-top: 28px;
+    /* margin-top: 28px; */
+  }
+
+  .left-part {
+    width: 100%;
+    margin: 0 30px;
+  }
+
+  .left-part button {
+    margin-top: 0;
   }
 }
